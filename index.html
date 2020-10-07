@@ -21,6 +21,7 @@
 			<li> <a href="#">Blog</a> </li>
 
 		</ul>
+		<div class="toggle"></div>
 	</nav>
 
 	<div class="text-container">
@@ -56,6 +57,7 @@
 	</div>
 	<div class="box-container">
 		<div class="box-1">
+			 
 			<div class="content">
 				<i class="fa fa-info-circle"></i>
 				<p>I will create a well designed and responsive websites 
@@ -101,5 +103,15 @@
 		<a href="#"> <i class="fa fa-google-plus"></i> </a>
 		<a href="https://github.com/Thanveerck"> <i class="fa fa-github"></i> </a>
 	</div>
+	<!--JQuery-->
+	<script type="text/javascript" src="js/JQuery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.toggle').click(function(){
+				$('.toggle').toggleClass('active')
+				$('nav').toggleClass('active')
+			})
+		})
+	</script>
 </body>
 </html>
