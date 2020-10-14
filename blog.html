@@ -21,7 +21,35 @@
 			0% {opacity:0;}
 			100% {opacity:1;}
 		}
+		button{
+				color: #fff;
+				width: 150px;
+				height: 40px;
+				font-size: 15px;
+				text-align: center;
+				line-height: 30px;
+				text-transform: uppercase;
+				text-decoration: none;
+				box-sizing: border-box;
+				background: linear-gradient(90deg, #03a9f4, #f441a5,#ffeb3b,#03a9f4);
+				background-size: 300%;
+				border-radius: 30px;
+				font-weight: bold;
+				border: none;
+		}
+		button:hover{
+			animation: animate 6s linear infinite;
+		}
 		
+		@keyframes animate{
+			0%{
+				background-position: 0%;
+			}
+			100%{
+				background-position: 300%;
+			}
+
+		}
 	</style>
 </head>
 <body style="background-color: #000;
@@ -32,5 +60,7 @@
 				overflow-x: hidden;">
 <h2 style="color: yellow">Coming soon..!</h2>
 <h1>TDOT</h1>
+
+<a href="index.html"><button class="back-btn">Back</button></a>
 </body>
 </html>

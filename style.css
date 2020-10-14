@@ -1,10 +1,15 @@
+html{
+	scroll-behavior: smooth;
+}
 body{
 	background-color: #fff;
 	margin: 0px;
 	padding: 0px;
 	font-family: 'Poppins',sans-serif;
 
+
 }
+
 
 ul{
 	list-style: none;
@@ -28,13 +33,19 @@ section{
 	background-color: #fff;
 	padding: 0px 50px;
 	top: 0;
+	box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
 }
 
 /* logo style*/
 
 .logo{
-	line-height: 70px;
+	line-height: 40px;
 	float: left;
+	font-weight: bold;
+	font-size: 40px;
+	letter-spacing: 10px;
+	text-decoration: none;
+	color: #000;
 }
 
 .menu{
