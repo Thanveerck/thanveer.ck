@@ -4,25 +4,34 @@
 	<title>thanveer.ck</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<!-- <meta http-equiv="refresh" content="1" > -->
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
 <section>
-<!--navbar-->	
-	<nav>
-		<a href="#" class="logo">T .</a>
-<!--navbar  menu-->
-	
-		<ul>
-			<li> <a href="#" class="active">Home</a> </li>
-			<li> <a href="#">About</a> </li>
-			<li> <a href="#">Contact</a> </li>
-			<li> <a href="#">Blog</a> </li>
 
+<!--navbar-->
+	<div class="header">
+		<h2 class="logo">T.</h2>
+		<input type="checkbox" id="chk">
+		<label for="chk" class="show-menu-btn">
+			<i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+		</label>
+		<ul class="menu">
+
+			<a href="#">Home</a>
+			<a href="#">About</a>
+			<a href="#">Contact</a>
+			<a href="#">Blog</a>
+			<label for="chk" class="hide-menu-btn">
+			<i class="fa fa-times" aria-hidden="true"></i>
+		</label>
+			
 		</ul>
-		<div class="toggle"></div>
-	</nav>
+	</div>	
+
 
 	<div class="text-container">
 		
@@ -103,15 +112,5 @@
 		<a href="#"> <i class="fa fa-google-plus"></i> </a>
 		<a href="https://github.com/Thanveerck"> <i class="fa fa-github"></i> </a>
 	</div>
-	<!--JQuery-->
-	<script type="text/javascript" src="js/JQuery.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function(){
-			$('.toggle').click(function(){
-				$('.toggle').toggleClass('active')
-				$('nav').toggleClass('active')
-			})
-		})
-	</script>
 </body>
 </html>
