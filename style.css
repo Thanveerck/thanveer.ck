@@ -1,5 +1,6 @@
 html{
 	scroll-behavior: smooth;
+	overflow-x: hidden;
 }
 body{
 	background-color: #fff;
@@ -401,6 +402,8 @@ footer p{
 	font-size: 20px;
 }
 
+/*----------------------------------------------------------------*/
+
 @media(max-width:1024px){
 
 	*{
@@ -467,9 +470,6 @@ footer p{
 }
 }
 @media(max-width:800px){
-	body{
-		overflow-x: hidden;
-	}
 	section{
 		background-image: none;
 		background-color: #f7f7f7;}
@@ -573,4 +573,34 @@ footer p{
 
 
 }
+@media(max-width:1024px){
+.hero{
+	height: 70%;
+}
+.text-container p:nth-child(1){
+	font-size: 35px;
+}
+.text-container p:nth-child(2){
+	font-size: 90px;
+}
+.text-container p{
+	line-height: 45px;
+}
+.text-container p:nth-child(3){
+	    font-size: 40px;
+    line-height: 42px;
+}
+.text-container button {
+    width: 170px;
+    height: 70px;
+    font-size: 22px;
 
+}
+
+.about-text button {
+    width: 160px;
+    height: 45px;
+    font-size: 20px;
+}
+
+}
