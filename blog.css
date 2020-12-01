@@ -106,3 +106,36 @@ body{
     background-color: white;
     border: 2px solid teal;
 }
+
+@media screen and (max-width: 1068px){
+    .blog-post{
+        max-width: 80rem;
+    }
+
+    .blog-post_img{
+        min-width: 30rem;
+        max-width: 30rem;
+    }
+
+
+}
+
+@media screen and (max-width:868px){
+    .blog-post{
+        max-width: 70rem;
+    }
+
+}
+
+@media screen and (max-width:768px){
+    .blog-post{
+        padding: 2.5rem;
+        flex-direction: column;
+
+    }
+    .blog-post_img{
+        min-width: 100%;
+        max-width: 100%;
+        transform: translate(0);
+    }
+}
