@@ -347,7 +347,6 @@ nav .close-btn {
 .about {
   background: #101d20;
   border-radius: 0.5em;
-  min-height: 35vh;
   margin-bottom: 5em;
 }
 
@@ -357,19 +356,39 @@ nav .close-btn {
 }
 
 .about-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 1.5em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "aboutImg aboutImg" "aboutText aboutText";
+  gap: 1em;
+  padding: 1.5em;
+}
+
+.about-wrapper .about-img {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: aboutImg;
+}
+
+.about-wrapper .about-img img {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 100%;
 }
 
 .about-wrapper p {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: aboutText;
+  text-align: left;
   font-size: 0.8rem;
   line-height: 1.5rem;
-  width: 90%;
   padding-bottom: 2em;
   color: #d1d1d1;
 }
@@ -426,7 +445,7 @@ footer {
 footer a {
   color: #e7e3e2;
   display: inline-block;
-  font-size: 1rem;
+  font-size: 0.6rem;
   margin: auto;
   text-decoration: none;
 }
@@ -470,6 +489,19 @@ footer a {
   .project-container .project-link a {
     font-size: 1.2rem;
   }
+  .about-wrapper {
+        grid-template-areas: "aboutImg aboutText";
+  }
+  .about-wrapper .about-img {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: aboutImg;
+  }
+  .about-wrapper p {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: aboutText;
+  }
   .skills {
     height: 50vh;
   }
@@ -478,12 +510,6 @@ footer a {
   }
   .skills .skills-wrapper i {
     font-size: 3.7rem;
-  }
-  .about-wrapper {
-    text-align: center;
-  }
-  .about-wrapper p {
-    width: 50%;
   }
 }
 
@@ -514,6 +540,17 @@ footer a {
   }
   .header-container .burger-btn {
     display: none;
+  }
+  .about-wrapper {
+    padding: 2em;
+  }
+  .about-wrapper .about-img {
+    width: 80%;
+  }
+  .about-wrapper p {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
 }
 
@@ -556,7 +593,17 @@ footer a {
     font-size: 2.7rem;
   }
   footer a {
-    font-size: 1.2rem;
+    font-size: 0.8rem;
+  }
+  .about-wrapper {
+    padding: 2.5em;
+  }
+  .about-wrapper .about-img {
+    width: 70%;
+    margin: auto;
+  }
+  .about-wrapper p {
+    font-size: 1rem;
   }
 }
 
@@ -632,15 +679,15 @@ footer a {
     font-size: 5rem;
     margin-inline: 0.5em;
   }
-  .about-wrapper {
-    margin-top: 2em;
+  .about-wrapper .about-img {
+    width: 65%;
   }
   .about-wrapper p {
-    width: 50%;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+    line-height: 1.8em;
   }
   .about-wrapper p span {
-    font-size: 1.7rem;
+    font-size: 2rem;
   }
   .contact-wrapper a {
     font-size: 3.7rem;
@@ -649,7 +696,7 @@ footer a {
     font-size: 2rem;
   }
   footer a {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
