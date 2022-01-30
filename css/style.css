@@ -398,6 +398,10 @@ nav .close-btn {
   font-weight: bold;
 }
 
+.about-wrapper p .tab {
+  margin-left: 1.5em;
+}
+
 .contact {
   min-height: 50vh;
   position: relative;
